@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
+import { Form } from 'formik';
 
-export const Form = styled.form`
+export const FormikForm = styled(Form)`
   padding: 15px;
   border: 2px solid white;
   width: fit-content;
