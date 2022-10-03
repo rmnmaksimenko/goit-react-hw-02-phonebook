@@ -24,16 +24,16 @@ export class App extends Component {
       alert(`${username} is already in contacts`);
       return;
     }
-    this.setState({
+    this.setState(prevState => ({
       contacts: [
-        ...this.state.contacts,
+        ...prevState.contacts,
         {
           id: id,
           username: username,
           number: number,
         },
       ],
-    });
+    }));
   };
 
   deleteContact = contactId => {
