@@ -16,7 +16,7 @@ const Contact = props => {
 
 export default Contact;
 Contact.propTypes = {
-  username: PropTypes.string,
-  number: PropTypes.string,
-  onDelete: PropTypes.func,
+  username: PropTypes.string.isRequired,
+  number: PropTypes.string.isRequired,
+  onDelete: PropTypes.func.isRequired,
 };
